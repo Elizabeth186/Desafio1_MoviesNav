@@ -8,14 +8,17 @@ const Tab = createBottomTabNavigator();
 
 export default function DetailsMovies({navigation}) {
   return (
-   <Text>holis</Text>
+    <View style={styles.container}>
+      <Text>holis</Text> 
+    </View>
+   
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0C3559',
     alignItems: 'center',
     justifyContent: 'center',
   },

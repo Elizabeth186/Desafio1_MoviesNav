@@ -10,9 +10,25 @@ const Tab = createBottomTabNavigator();
 export default function navigation() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Estrenos" component={Navigationmovies} />
+      <Tab.Navigator
+      initialRouteName={'Critic'}
+      tabBarOptions={{
+         activeTintColor: 'white',
+         inactiveTintColor: 'black',
+         activeBackgroundColor: '#0C3559',
+         inactiveBackgroundColor: '#ffffff',
+             style: {
+                   backgroundColor: '#CE4418',
+                   paddingBottom: 3
+             }
+      }}>
+        <Tab.Screen name="Home" component={Home} 
+        //Agregando estilo a la parte superiro de tab//
+        options={{headerStyle: {backgroundColor: '#0D0D0D'},
+        headerTintColor: '#fff',headerTitleStyle: {fontWeight: 'bold'}}} />
+        <Tab.Screen name="Movies" component={Navigationmovies} 
+        options={{headerStyle: {backgroundColor: '#0D0D0D'},
+        headerTintColor: '#fff',headerTitleStyle: {fontWeight: 'bold'}}}/>
       </Tab.Navigator>
     </NavigationContainer>
   );

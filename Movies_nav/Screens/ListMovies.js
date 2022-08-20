@@ -30,7 +30,7 @@ export default function ListMovies({navigation}) {
             <View>
             {
               movies.map((movi, i) => (
-                <ListItem key={i} bottomDivider onPress={() => navigation.navigate("Detalles")}>
+                <ListItem key={i} bottomDivider onPress={() => navigation.navigate("Details")}>
                   <Avatar rounded source={{uri: movi.image}}></Avatar>
                   <ListItem.Content>
                     <ListItem.Title>{movi.name}</ListItem.Title>
@@ -50,7 +50,7 @@ export default function ListMovies({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0C3559',
     alignItems: 'center',
     justifyContent: 'center',
   },

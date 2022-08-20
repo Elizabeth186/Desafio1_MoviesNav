@@ -10,8 +10,13 @@ export default function Navigationmovies() {
   return (
     
       <Stack.Navigator>
-        <Stack.Screen name="Estrenos" component={ListMovies} />
-        <Stack.Screen name="Detalles" component={DetailsMovies} />
+        <Stack.Screen name="List" component={ListMovies} 
+       
+        options={{headerStyle: {backgroundColor: '#0D0D0D'}, headerShown:false,
+        headerTintColor: '#fff',headerTitleStyle: {fontWeight: 'bold'}}}/>
+        <Stack.Screen name="Details" component={DetailsMovies} 
+        options={{headerStyle: {backgroundColor: '#0D0D0D'},
+        headerTintColor: '#fff',headerTitleStyle: {fontWeight: 'bold'}}}/>
       </Stack.Navigator>
     
   );
