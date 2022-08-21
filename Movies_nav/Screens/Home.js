@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { RadioButton } from 'react-native-simple-radio-button';
+
 
 
 export default function Home({navigation}) {
@@ -37,18 +37,18 @@ export default function Home({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0C3559',
+    backgroundColor: '#FFF8DC',
     alignItems: 'center',
     
     
   },
   Title:{
-    color: '#ffffff',
+    color: '#262626',
     fontSize: 30,
     marginTop: 15
   },
   TextStyle: {
-    color: '#ffffff',
+    color: '#808080',
     marginBottom: 20,
     marginRight: 10,
     marginLeft: 10,
@@ -71,9 +71,8 @@ styleimage:{
   height:200
 },
 Textanswer:{
-  color:'#ffffff',
+  color:'#808080',
   fontWeight: 'bold',
-  marginTop: 10,
   marginBottom: 10
 },
 touch:{
