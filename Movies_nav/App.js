@@ -15,7 +15,7 @@ export default function navigation() {
       tabBarOptions={{
          activeTintColor: 'white',
          inactiveTintColor: 'black',
-         activeBackgroundColor: '#0C3559',
+         activeBackgroundColor: '#5F9EA0',
          inactiveBackgroundColor: '#ffffff',
              style: {
                    backgroundColor: '#CE4418',
